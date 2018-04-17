@@ -1,0 +1,544 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+.content {
+	min-height: 80%;
+	height: auto;
+	overflow-x: hidden;
+}
+
+.stopScroll {
+	overflow: hidden;
+}
+.show {
+	display: block;
+	color: black;
+	opacity: 1.0;
+}
+
+.pageHeader {
+	margin-top: 40px;
+}
+
+.headerPic {
+	height: 95vh;
+}
+
+.headerPic img{
+	width: 100%;
+	height: 100%;
+}
+
+.logo {
+	text-align: center;
+}
+
+#logoPic {
+	height: 180px;
+	width: 220px;
+	margin-bottom: -25px;
+}
+
+
+.navBar {
+	width: 100%;
+}
+.standardNavBar {
+	text-align: center;
+	display: block;
+	background-color: white;
+	height: 3.5em;
+	line-height: 3.5em;
+	width: 100%;
+	margin: 0;
+	vertical-align: middle;
+	position: relative;
+	border-bottom: 3px solid #ff4d4d;
+}
+
+.standardNavBar	> li {
+	text-decoration: none;
+	display: inline;
+	margin: 2em;
+	vertical-align: middle;
+
+}
+
+
+.standardNavBar > li > a {
+	color: black;
+	text-decoration: none;
+}
+
+
+
+.standardNavBar > li > a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.standardNavBar > li > a:hover {
+	color: red;
+	text-decoration: none;
+}
+
+
+.mobileNavBar {
+	width: 100%;
+	text-align: center;
+	line-height: 2em;
+}
+
+.redMobileMenu {
+	background-color: #ff4d4d;
+	color: white;
+}
+
+.dropdownMenu {
+	background-color: white;
+	display: block;
+	margin-bottom: -10px;
+	padding: 10px 0 10px 0;
+}
+
+.dropdownLinks {
+	background-color: white;
+	text-align: center;
+	padding-bottom: 15px;
+	border-bottom: 3px solid #ff4d4d;
+}
+.dropdownLinks > li {
+	list-style-type: none;
+	margin-top: 10px;
+	height: 25px;
+}
+
+.dropdownLinks > li > a {
+	color: black;
+	text-decoration: none;
+}
+
+.dropdownLinks > li > a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.dropdownLinks > li > a:hover {
+	color: red;
+	text-decoration: none;
+}
+
+.active-navBar-link {
+	color:  #ff4d4d;
+}
+
+.quote {
+	text-align: center;
+	margin: 2em;
+	color: #ffffff;
+}
+
+.aboutMe {
+  text-align: justify;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 1em;
+}
+
+.resumeBlock {
+	display: block;
+	padding-top: 60px;
+}
+
+.resumeLine {
+	padding: 10px 10% 10px 10%;
+}	
+.sectionHeader {
+	text-align:center;
+	color: #ff4d4d;
+  	font-size: 2.7em;
+  	font-family: Garamond;
+  	margin-bottom: 40px;
+}
+
+.resumeHeader {
+	margin-top: 50px;
+	margin-bottom: -25px;
+	margin-left: 6%;
+	color: #ff4d4d;
+}
+
+.title {
+	display: inline-block;
+	font-family: Garamond;
+    font-size: 1em;
+    font-weight: bold;
+    width: 250px;
+    float: left;
+
+
+
+}
+
+.jobTitle {
+	display: inline-block;
+	font-family: Garamond;
+    font-size: 1em;
+    float: right;
+    margin: 0 41.5% 0 0;
+    width: 100%;
+
+}
+
+.date {
+	display: inline-block;
+	float: left;
+}
+
+.description {
+	display: inline-block;
+	float: right;
+	width: 600px;
+}
+
+.location {
+	display: block;
+	font-style: italic;
+	color: #B22222;
+}
+
+.special {
+	display: inline-block;
+	float: right;
+	margin:0 51% 0 0;
+	width: 100%;
+}
+
+.skillsHeader {
+	margin-top: 40px;
+	margin-bottom: 25px;
+	text-align: center;
+	color: #ff4d4d;
+	font-size: 2em;
+}
+
+.skillsBlock {
+	text-align: center;
+	display: block;
+	-webkit-column-count: 2;
+}
+
+.abilityLine {
+	text-align: center;
+	display: block;
+}
+
+.abilityName {
+	display: inline-block;
+	text-align: left;
+	width: 50%;
+	margin-right: -15%;
+}
+
+.abilityRating {
+	display: inline-block;
+}
+
+.star-rating {
+	display: inline-block;
+}
+
+.unfilled-star {
+	color: #b3b3b3;
+
+}
+.filled-star {
+	color:#ffcc00;
+}
+
+.skillsBlock {
+	text-align: center;
+	display: block;
+}
+
+.projectImageDiv {
+	text-align: center;
+	display: block;
+}
+
+.projectImage {
+	height: 40%;
+	width: 30%;
+	z-index: -1;
+}
+
+.projectImage:hover {
+	opacity: 0.5;
+	transition: opacity 1s;
+}
+
+.projectLink {
+	opacity: 1;
+	height: 40%;
+	width: 30%;
+}
+
+.projectTextLink {
+	font-size: 1.5em;
+
+}
+/*.projectLink:hover {
+	opacity: 1.0;
+	transition: opacity 1.5s;
+	color: red;
+}*/
+
+
+.modal {  /*Modal Background*/
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+	position: relative;
+	margin: auto;
+	padding: 0;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+	background-color: #fefefe;
+	border: 1px solid #888;
+	width: 80%;
+	max-width: 400px;
+	border-radius: 20px;
+	height: 400px;
+}
+
+@-webkit-keyframes animatetop {
+	from {top: -300px; opacity:0;}
+	to {top: 0; opacity: 1;}
+}
+
+@keyframes animatetop {
+	from {
+		top: -300px; 
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+.formLine {
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+.formLabel {
+	display: inline-block;
+	width: 70px;
+	vertical-align: top;
+}
+
+.textInput {
+	height: 25px;
+	width: 90%;
+	border-radius: 6px;
+}
+
+#contactFormCloseButton {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#contactFormCloseButton:hover, #contactFormCloseButton:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header {
+	padding: 2px 16px;
+	background-color: #ff3333;
+    color: white;
+    border-radius: 20px 20px 0 0;
+    height: 30px;
+}
+
+.modal-body {
+	padding: 2px 16px;
+	height: 350px;
+}
+
+.contactMe {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #ff3333;
+    color: white;
+    text-align: right;
+    border-radius: 0 0 20px 20px;
+    height: 30px;
+}
+
+textarea {
+	resize: none;
+	height: 80px;
+	width: 90%;
+	border-radius: 6px;
+}
+
+.error {
+	border: 2px solid red;
+}
+
+.errors {
+	color: red;
+	text-align: center;
+	margin: 20px 0 -20px 0;
+}
+
+#email-error {
+	margin: 0 0 -10px 50px;
+	font-size: 86%;
+}
+
+.submitButton {
+	height: 25px;
+	width: 70px;
+	border-radius: 7px;
+	background-color: white;
+
+}
+
+footer {
+	padding: 2%;
+	background-color: #404040;
+	min-height: 60px;
+	/*margin-top: 100px;*/
+}
+
+.address {
+	color: white;
+	display: none;
+	text-align: center;
+
+}
+
+.socialMedia {
+	display: block;
+	text-align: center;
+}
+
+.socialMediaLink {
+	display: inline-block;
+}
+
+.socialMediaIcon {
+	height: 30px;
+	margin: 10px;
+}
+
+@media screen and (max-width: 650px) {
+	.resumeLine {
+		margin-left: 6%;
+		padding: 0;
+	}
+
+	.title {
+		display: block;
+		float: none;
+	}
+
+	.jobTitle {
+		float: none;
+		margin-top: 10px;
+	}
+
+	.date {
+		float: none;
+		margin-top: 10px;
+	}
+
+	.description {
+		float: none;
+		padding-right: 10%;
+		width: auto;
+		margin-top: 10px;
+	}
+
+	.location {
+		margin-top: 10px;
+	}
+
+	.special {
+		float: none;
+		margin: 0;
+		margin-top: 10px;
+	}
+
+	.skillsBlock {
+		-webkit-column-count: initial;
+	}
+
+	.abilityLine {
+		margin: 30px 0 0 0;
+	}
+
+	.abilityName {
+		display: block;
+		text-align: center;
+		width: auto;
+		margin: 0;
+		font-size: 1.25em;
+	}
+
+	.star-rating {
+		font-size: 1.25em;
+		margin: 3px;
+	}
+
+}
+
+@media screen and (min-width: 651px) {
+	.resumeLine {
+		-webkit-column-count: 2;
+	}
+
+	.special {
+		float: none;
+		margin: 0;
+	}
+
+	.jobTitle {
+		float: none;
+		margin: 0;
+	}
+
+	.description {
+		float: none;
+		width: 100%;
+	}
+}
+

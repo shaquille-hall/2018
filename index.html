@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Shaquille Hall </title>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/css/jquery-ui.min.css"> 
+		<link rel="stylesheet" href="assets/css/index.css"> 
+	</head>
+	<body class="body" id="home">
+		<div class="content">
+			<div class="logo">
+				<img id="logoPic" src="assets/pics/logo.png">
+			</div>
+
+			<header id="navBar" class="navBar pageHeader"></header>
+			<section class="headerPic">
+				<img id="headerPic"  src="assets/pics/friend2.jpg"/> 
+			</section>
+			<section id="aboutMe" class="pageHeader"></section>
+		<!-- <section id="aboutMePics" class = "pageHeader"> About Me Pics </section> -->
+			<section id="resume" class="pageHeader"></section>
+			<section id="skills" class="pageHeader"> </section>		
+			<section id="projects" class="pageHeader"> </section>
+			<div id="contactModal" class="modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<span id="contactFormCloseButton">x</span>
+						<h2> Contact Me </h2>
+					</div>
+					<div class="modal-body" >
+						<form id="contactForm">
+							<p class="contactMe"> Feel free to contact me using the form below. </p>
+							<p class="errors"> Please correct errors below. </p>
+							<p class="formLine"> 
+								<label class="formLabel" for="name"> Name: </label> 
+								<input type="text" name="name"> 
+							</p>
+							<p class="formLine"> 
+								<label class="formLabel" for="email"> Email: </label> 
+								<input type="text" name="email"> 
+							</p>
+							<p class="errors" id="email-error"> Eg: example@email.com </p>
+							<p class="formLine"> 
+								<label class="formLabel" for="content"> Content: </label> 
+								<textarea name="textarea" form="contact-form"> </textarea>
+							</p>
+							<p id="result"></p>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="submitButton"> Submit </button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="quote pageHeader"></div>
+			<address>
+				<p class="address"> Shaquille Hall
+					<br /> Atlanta, Georgia & Nassau, Bahamas
+					<br /> Email: shaquille@shaquillehall.com
+				</p>
+				<div class="socialMedia">
+					<div class="socialMediaLink">
+						<a href="https://www.facebook.com/shaquille.hall.56?fref=ts" title="Facebook Profile" > 
+        					<img src="assets/pics/facebook-xxl.png" class="socialMediaIcon">
+     					</a>
+     				</div>
+     				<div class="socialMediaLink">
+     					<a href="https://twitter.com/ShaquilleDAHall" title=" Twitter Profile" > 
+					    	<img src="assets/pics/twitter-xxl.png" class="socialMediaIcon">
+					    </a>
+     				</div>
+     				<div class="socialMediaLink">
+     					<a href="https://www.linkedin.com/pub/shaquille-hall/52/2b1/a73/" title="LinkedIn Profile" >
+					        <img src="assets/pics/linkedin-xxl.png" class="socialMediaIcon">
+					    </a> 
+     				</div>
+				</div>
+			</address>
+		</footer>
+		<script type="text/javascript" src="assets/scripts/jquery-1.11.1.js"></script>
+		<script type="text/javascript" src="assets/scripts/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="assets/scripts/loader.js"></script>
+		<script type="text/javascript" src="assets/scripts/init.js"></script>
+		<script type="text/javascript" src="assets/scripts/form.js"></script>
+		<script type="text/javascript" src="assets/scripts/index.js"></script>
+	</body>
+	
+</html>
